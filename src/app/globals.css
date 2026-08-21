@@ -1,26 +1,292 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f3ed;
+  --foreground: #2c2a26;
+  --stone: #e8e2d8;
+  --stone-dark: #4a4540;
+  --gold: #c4a052;
+  --gold-light: #d4b872;
+  --terracotta: #a85c3a;
+  --forest: #2d4a3e;
+  --cream: #faf8f5;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-stone: var(--stone);
+  --color-stone-dark: var(--stone-dark);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-terracotta: var(--terracotta);
+  --color-forest: var(--forest);
+  --color-cream: var(--cream);
+  --font-sans: var(--font-montserrat);
+  --font-display: var(--font-playfair);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+html[lang="ru"] body {
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+.armenian-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c4a052' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.section-label {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.gold-line {
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+}
+
+.reveal-visible .gold-line-animate {
+  animation: line-grow 0.8s ease-out forwards;
+}
+
+@keyframes line-grow {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 48px;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+.animate-delay-150 {
+  animation-delay: 150ms;
+}
+
+.animate-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animate-delay-450 {
+  animation-delay: 450ms;
+}
+
+.animate-delay-600 {
+  animation-delay: 600ms;
+}
+
+.animate-delay-750 {
+  animation-delay: 750ms;
+}
+
+@keyframes ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.animate-ken-burns {
+  animation: ken-burns 22s ease-out forwards;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.75s ease,
+    transform 0.75s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-glow {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.btn-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(196, 160, 82, 0.4);
+}
+
+.card-lift {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(44, 42, 38, 0.12);
+}
+
+.image-zoom {
+  transition: transform 0.6s ease;
+}
+
+.group:hover .image-zoom {
+  transform: scale(1.07);
+}
+
+.feature-icon {
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background: rgba(196, 160, 82, 0.12);
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.card-lift:hover .feature-icon {
+  background: rgba(196, 160, 82, 0.2);
+}
+
+.reveal-visible .feature-icon-book {
+  animation: icon-book 4s ease-in-out infinite;
+}
+
+.reveal-visible .feature-icon-transport {
+  animation: icon-transport 3.5s ease-in-out infinite;
+}
+
+.reveal-visible .feature-icon-map {
+  animation: icon-map 4.5s ease-in-out infinite;
+}
+
+.reveal-visible .feature-icon-pin {
+  animation: icon-pin 3s ease-in-out infinite;
+}
+
+.card-lift:hover .feature-icon-book,
+.card-lift:hover .feature-icon-transport,
+.card-lift:hover .feature-icon-map,
+.card-lift:hover .feature-icon-pin {
+  animation-play-state: paused;
+  transform: scale(1.12);
+}
+
+@keyframes icon-book {
+  0%,
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-4deg) translateY(-3px);
+  }
+}
+
+@keyframes icon-transport {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes icon-map {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-3deg) scale(1.04);
+  }
+  75% {
+    transform: rotate(3deg) scale(1.04);
+  }
+}
+
+@keyframes icon-pin {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-ken-burns,
+  .reveal,
+  .reveal-visible .gold-line-animate,
+  .reveal-visible .feature-icon-book,
+  .reveal-visible .feature-icon-transport,
+  .reveal-visible .feature-icon-map,
+  .reveal-visible .feature-icon-pin {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
