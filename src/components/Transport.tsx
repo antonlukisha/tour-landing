@@ -42,9 +42,9 @@ export default function Transport({ dict }: TransportProps) {
 
           <Reveal delay={200}>
             <div className="grid grid-cols-2 gap-4">
-              <div className="group relative col-span-2 aspect-[16/10] overflow-hidden rounded-2xl">
+              <div className="group relative col-span-2 aspect-16/10 overflow-hidden rounded-2xl">
                 <Image
-                  src="/images/van-open-door.jpg"
+                  src="/images/gallery-16.jpg"
                   alt={dict.transport.vanOpenAlt}
                   fill
                   className="image-zoom object-cover"
@@ -53,7 +53,7 @@ export default function Transport({ dict }: TransportProps) {
               </div>
               <div className="group relative aspect-square overflow-hidden rounded-xl">
                 <Image
-                  src="/images/van-side.jpg"
+                  src="/images/gallery-66.jpg"
                   alt={dict.transport.vanSideAlt}
                   fill
                   className="image-zoom object-cover"
@@ -62,7 +62,7 @@ export default function Transport({ dict }: TransportProps) {
               </div>
               <div className="group relative aspect-square overflow-hidden rounded-xl">
                 <Image
-                  src="/images/van-front.jpg"
+                  src="/images/gallery-65.jpg"
                   alt={dict.transport.vanFrontAlt}
                   fill
                   className="image-zoom object-cover"

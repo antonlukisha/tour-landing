@@ -11,6 +11,14 @@ export type Dictionary = {
     title: string;
     description: string;
   };
+  lang:{
+    en: string,
+    ru: string,
+    hy: string,
+    zh: string,
+    de: string,
+    it: string,
+  };
   nav: {
     about: string;
     tours: string;
@@ -34,6 +42,7 @@ export type Dictionary = {
     imageAlt: string;
   };
   guide: {
+    name: string;
     label: string;
     title: string;
     role: string;

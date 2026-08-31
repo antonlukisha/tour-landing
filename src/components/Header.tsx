@@ -44,7 +44,7 @@ export default function Header({ locale, dict }: HeaderProps) {
             scrolled || menuOpen ? "text-foreground" : "text-white"
           }`}
         >
-          Gevorg
+          {dict.guide.name}
           <span className="ml-1 text-gold">·</span>
           <span className="ml-1 text-sm font-normal opacity-80">{dict.nav.country}</span>
         </a>
@@ -61,7 +61,7 @@ export default function Header({ locale, dict }: HeaderProps) {
               {link.label}
             </a>
           ))}
-          <LanguageSwitcher locale={locale} light={!scrolled && !menuOpen} />
+          <LanguageSwitcher dict={dict} locale={locale} light={!scrolled && !menuOpen} />
           <a
             href="#contact"
             className="btn-glow rounded-full bg-gold px-5 py-2 text-sm font-semibold text-white hover:bg-gold-light"
@@ -71,7 +71,7 @@ export default function Header({ locale, dict }: HeaderProps) {
         </nav>
 
         <div className="flex items-center gap-3 lg:hidden">
-          <LanguageSwitcher locale={locale} compact />
+          <LanguageSwitcher dict={dict} locale={locale} compact />
           <button
             type="button"
             aria-label={dict.nav.menu}

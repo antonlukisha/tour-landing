@@ -55,7 +55,7 @@ export default function Hero({ dict }: HeroProps) {
           {[
             { value: "10+", label: dict.hero.statExperience },
             { value: "100+", label: dict.hero.statRoutes },
-            { value: "7–8", label: dict.hero.statSeats },
+            { value: "5–8", label: dict.hero.statSeats },
           ].map((stat) => (
             <div key={stat.label}>
               <p className="font-display text-3xl font-semibold text-gold-light">{stat.value}</p>

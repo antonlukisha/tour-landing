@@ -35,7 +35,7 @@ export default function Gallery({ dict }: GalleryProps) {
                 className={
                   i === 0 || i === 7
                     ? "col-span-2 row-span-2 aspect-square"
-                    : "aspect-[4/3]"
+                      : ([1, 2, 3, 4, 5, 6, 8, 9].includes(i) ? "row-span-1" : "aspect-4/3")
                 }
               >
                 <div className="group relative h-full overflow-hidden rounded-xl">
@@ -51,7 +51,7 @@ export default function Gallery({ dict }: GalleryProps) {
                     }
                   />
                   <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/10" />
-                  <div className="absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 transition duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                  <div className="absolute inset-x-0 bottom-0 translate-y-2 bg-linear-to-t from-black/70 to-transparent p-3 opacity-0 transition duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                     <p className="text-xs font-medium text-white">{alt}</p>
                   </div>
                 </div>

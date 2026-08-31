@@ -41,7 +41,7 @@ export default function Contact({ dict }: ContactProps) {
                   </a>
 
                   <a
-                    href={contact.telegram}
+                    href={`https://t.me/${contact.telegram}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 rounded-xl bg-[#0088cc]/10 px-5 py-4 text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0088cc]/20 hover:shadow-lg"
@@ -53,7 +53,7 @@ export default function Contact({ dict }: ContactProps) {
                     </span>
                     <div>
                       <p className="font-semibold">Telegram</p>
-                      <p className="text-sm text-white/60">@gevorg_tours</p>
+                      <p className="text-sm text-white/60">@{contact.telegram}</p>
                     </div>
                   </a>
 
@@ -74,7 +74,7 @@ export default function Contact({ dict }: ContactProps) {
                 </div>
               </div>
 
-              <div className="group relative min-h-[320px] overflow-hidden bg-stone-dark lg:min-h-full">
+              <div className="group relative min-h-80 overflow-hidden bg-stone-dark lg:min-h-full">
                 <Image
                   src="/images/tatev-monastery.jpg"
                   alt={dict.contact.imageAlt}
@@ -82,7 +82,7 @@ export default function Contact({ dict }: ContactProps) {
                   className="image-zoom object-cover"
                   sizes="50vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 to-transparent lg:bg-gradient-to-l" />
+                <div className="absolute inset-0 bg-linear-to-r from-foreground/80 to-transparent lg:bg-linear-to-l" />
                 <div className="relative flex h-full items-end p-10 md:p-14">
                   <p className="font-display max-w-xs text-2xl italic text-white/90">
                     {dict.contact.quote}

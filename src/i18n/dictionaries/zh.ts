@@ -37,12 +37,20 @@ const galleryAlts: Dictionary["gallery"]["alts"] = {
 
 export const zh: Dictionary = {
   meta: {
-    title: "Gevorg — 亚美尼亚私人游",
+    title: "格沃尔格 — 亚美尼亚私人游",
     description:
-      "与司机兼向导 Gevorg 一起探索亚美尼亚。修道院、群山、故事与舒适交通。",
+      "与司机兼向导 格沃尔格 一起探索亚美尼亚。修道院、群山、故事与舒适交通。",
+  },
+  lang: {
+    en: "英语",
+    ru: "俄语",
+    hy: "亚美尼亚语",
+    zh: "中文",
+    de: "德语",
+    it: "意大利语",
   },
   nav: {
-    about: "关于 Gevorg",
+    about: "关于 格沃尔格",
     tours: "路线",
     transport: "交通",
     gallery: "相册",
@@ -54,7 +62,7 @@ export const zh: Dictionary = {
   hero: {
     label: "亚美尼亚私人游",
     title: "探索亚美尼亚",
-    titleAccent: "与 Gevorg 同行",
+    titleAccent: "与 格沃尔格 同行",
     subtitle:
       "一位走遍全国的司机兼向导，为您讲述修道院、群山、人物与这片古老土地的传统故事。",
     book: "预订行程",
@@ -65,14 +73,15 @@ export const zh: Dictionary = {
     imageAlt: "凡湖阿赫tamар教堂与雪山",
   },
   guide: {
+    name: "格沃尔格",
     label: "您的向导",
-    title: "认识 Gevorg",
+    title: "认识 格沃尔格",
     role: "亚美尼亚司机兼向导",
     greeting:
       "欢迎！我出生在亚美尼亚，一生行驶在这些路上。我熟悉每一座修道院、每一个弯道和每一个故事——从古老传说到只有当地人才会告诉您的秘密。",
-    quote: "「此处将填入 Gevorg 欢迎客人的语录。」",
-    write: "联系 Gevorg",
-    photoAlt: "Gevorg — 亚美尼亚司机兼向导",
+    quote: "「此处将填入 格沃尔格 欢迎客人的语录。」",
+    write: "联系 格沃尔格",
+    photoAlt: "格沃尔格 — 亚美尼亚司机兼向导",
   },
   tours: {
     label: "路线",
@@ -117,11 +126,11 @@ export const zh: Dictionary = {
     items: [
       {
         title: "鲜活的故事",
-        description: "不是维基百科上的枯燥事实，而是 Gevorg 亲身了解的人物、传统与地方。",
+        description: "不是维基百科上的枯燥事实，而是 格沃尔格 亲身了解的人物、传统与地方。",
       },
       {
         title: "舒适交通",
-        description: "7–8 座空调商务车——适合家庭或小团体。",
+        description: "5–8 座空调商务车——适合家庭或小团体。",
       },
       {
         title: "灵活路线",
@@ -129,7 +138,7 @@ export const zh: Dictionary = {
       },
       {
         title: "本地向导",
-        description: "Gevorg 在亚美尼亚出生长大——熟悉道路、季节与各景点最佳时机。",
+        description: "格沃尔格 在亚美尼亚出生长大——熟悉道路、季节与各景点最佳时机。",
       },
     ],
   },
@@ -137,8 +146,8 @@ export const zh: Dictionary = {
     label: "交通",
     title: "舒适商务车",
     description:
-      "现代 Hyundai，7–8 座，空调、舒适座椅与大行李厢。适合家庭、情侣或小团体。",
-    perks: ["7–8 座 + 司机", "空调与暖气", "大行李厢", "山路舒适"],
+      "现代 Hyundai，5–8 座，空调、舒适座椅与大行李厢。适合家庭、情侣或小团体。",
+    perks: ["5–8 座 + 司机", "空调与暖气", "大行李厢", "山路舒适"],
     vanOpenAlt: "敞开门的商务车",
     vanSideAlt: "商务车侧面",
     vanFrontAlt: "商务车正面",

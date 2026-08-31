@@ -1,6 +1,4 @@
-import type { Locale } from "@/i18n/config";
-
-export default function FlagIcon({ locale, size = 26 }: { locale: Locale; size?: number }) {
+export default function FlagIcon({ locale, size = 26 }: { locale: string; size?: number }) {
     return (
         <img
             src={`/flags/${locale}.png`}

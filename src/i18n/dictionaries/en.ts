@@ -41,6 +41,14 @@ export const en: Dictionary = {
     description:
       "Private tours across Armenia with driver and guide Gevorg. Monasteries, mountains, stories, and comfortable transport.",
   },
+  lang: {
+    en: "english",
+    ru: "russian",
+    hy: "armenian",
+    zh: "chinese",
+    de: "german",
+    it: "italian",
+  },
   nav: {
     about: "About Gevorg",
     tours: "Routes",
@@ -65,6 +73,7 @@ export const en: Dictionary = {
     imageAlt: "Akhtamar Church on Lake Van with snow-capped mountains",
   },
   guide: {
+    name: "Gevorg",
     label: "Your guide",
     title: "Meet Gevorg",
     role: "Driver and guide in Armenia",
@@ -131,7 +140,7 @@ export const en: Dictionary = {
       {
         title: "Comfortable transport",
         description:
-          "A spacious 7–8 seat minivan with air conditioning — ideal for a family or small group.",
+          "A spacious 5–8 seat minivan with air conditioning — ideal for a family or small group.",
       },
       {
         title: "Flexible route",
@@ -149,9 +158,9 @@ export const en: Dictionary = {
     label: "Transport",
     title: "Comfortable minivan",
     description:
-      "A spacious Hyundai for 7–8 passengers with air conditioning, comfortable seats, and a large trunk. Perfect for a family, couple, or small group of friends.",
+      "A spacious Hyundai for 5–8 passengers with air conditioning, comfortable seats, and a large trunk. Perfect for a family, couple, or small group of friends.",
     perks: [
-      "7–8 seats + driver",
+      "5–8 seats + driver",
       "Air conditioning and heating",
       "Large trunk for luggage",
       "Comfort on mountain roads",

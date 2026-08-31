@@ -9,7 +9,7 @@ export default function Footer({ dict }: FooterProps) {
     <footer className="border-t border-stone/40 bg-background py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 md:flex-row">
         <p className="font-display text-lg font-semibold">
-          Gevorg<span className="text-gold">·</span>
+          {dict.guide.name}<span className="text-gold"> · </span>
           {dict.nav.country}
         </p>
         <p className="text-sm text-stone-dark/60">

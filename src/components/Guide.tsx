@@ -44,7 +44,7 @@ export default function Guide({ dict }: GuideProps) {
             <p className="font-display text-lg leading-relaxed italic text-foreground md:text-xl">
               {dict.guide.quote}
             </p>
-            <footer className="mt-4 text-sm font-medium text-gold">— Gevorg</footer>
+            <footer className="mt-4 text-sm font-medium text-gold">— {dict.guide.name}</footer>
           </blockquote>
         </Reveal>
 

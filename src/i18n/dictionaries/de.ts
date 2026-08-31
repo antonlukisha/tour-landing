@@ -41,6 +41,14 @@ export const de: Dictionary = {
     description:
       "Private Touren durch Armenien mit Fahrer und Reiseleiter Gevorg. Klöster, Berge, Geschichten und komfortabler Transport.",
   },
+  lang: {
+    en: "englisch",
+    ru: "russisch",
+    hy: "armenisch",
+    zh: "chinesisch",
+    de: "deutsch",
+    it: "italienisch",
+  },
   nav: {
     about: "Über Gevorg",
     tours: "Routen",
@@ -65,6 +73,7 @@ export const de: Dictionary = {
     imageAlt: "Akhtamar-Kirche am Van-See mit schneebedeckten Bergen",
   },
   guide: {
+    name: "Gevorg",
     label: "Ihr Reiseleiter",
     title: "Lernen Sie Gevorg kennen",
     role: "Fahrer und Reiseleiter in Armenien",
@@ -131,7 +140,7 @@ export const de: Dictionary = {
       {
         title: "Komfortabler Transport",
         description:
-          "Ein geräumiger 7–8-Sitzer-Minivan mit Klimaanlage — ideal für Familie oder kleine Gruppe.",
+          "Ein geräumiger 5–8-Sitzer-Minivan mit Klimaanlage — ideal für Familie oder kleine Gruppe.",
       },
       {
         title: "Flexible Route",
@@ -149,9 +158,9 @@ export const de: Dictionary = {
     label: "Transport",
     title: "Komfortabler Minivan",
     description:
-      "Ein geräumiger Hyundai für 7–8 Passagiere mit Klimaanlage, bequemen Sitzen und großem Kofferraum. Perfekt für Familie, Paar oder kleine Freundesgruppe.",
+      "Ein geräumiger Hyundai für 5–8 Passagiere mit Klimaanlage, bequemen Sitzen und großem Kofferraum. Perfekt für Familie, Paar oder kleine Freundesgruppe.",
     perks: [
-      "7–8 Sitze + Fahrer",
+      "5–8 Sitze + Fahrer",
       "Klimaanlage und Heizung",
       "Großer Kofferraum",
       "Komfort auf Bergstraßen",

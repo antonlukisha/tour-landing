@@ -5,7 +5,7 @@ export const defaultLocale: Locale = "en";
 
 export const prefixedLocales = ["ru", "hy", "zh", "de", "it"] as const;
 
-export const localeNames: Record<Locale, string> = {
+export const localeCodes: Record<Locale, string> = {
   en: "en",
   ru: "ru",
   hy: "hy",
